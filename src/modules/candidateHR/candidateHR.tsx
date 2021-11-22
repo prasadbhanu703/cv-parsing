@@ -25,12 +25,12 @@ const CandidateHR = () => {
             <Input placeholder="search jobs here" style={{ padding: "10px" }} />
             <Button className="button"> Find jobs </Button>
         </HeadingContainer>
-        <Container style={{padding : "20px 60px"}}>
+        <Container style={{padding : "20px"}}>
         <GridContainer>
             <div>
                 <img src={BacImage} />
             </div>
-            <div style={{padding : "50px 0px"}}>
+            <div>
                 <h1 >
                     Where do you want to work?
                 </h1>
@@ -57,8 +57,8 @@ const CandidateHR = () => {
             </div>
         </GridContainer>
 
-        <h1> Explore other ways to learn and get engaged </h1>
-        <h3> Grow your skills, help others and be a tech insider. </h3>
+        <h1 style={{paddingLeft : "40px"}}> Explore other ways to learn and get engaged </h1>
+        <h3 style={{paddingLeft : "40px"}}> Grow your skills, help others and be a tech insider. </h3>
         <FlexContainer>
             <div>
             <img src={BacImage} />
