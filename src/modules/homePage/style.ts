@@ -46,6 +46,18 @@ h6 {
     font-size:20px;
   }
 }
+
+.button {
+  color : ${colors.white};
+  background : ${colors.black};
+  margin-left: 10px;
+  height : 50px;
+  &:hover {
+    // transform: scale(1.1);
+    background : ${colors.gray};
+}
+
+}
 `
 
 export const Container = styled.div`

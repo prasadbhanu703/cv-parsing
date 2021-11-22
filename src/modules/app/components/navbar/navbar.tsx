@@ -110,7 +110,11 @@ const Navbar = () => {
     history.push(Paths.signIn);
     setActiveLink("signIn");
   };
-
+  
+  const toCandidateHR = () => {
+    history.push(Paths.candidateHR);
+    setActiveLink("candidateHR");
+  }
   const toLogout = () => {
     localStorage.clear()
     history.push(Paths.signIn);
@@ -189,9 +193,10 @@ letterSpacing: "0.05em",
               <a>Professionals </a>
             </NavTab>
 
-        <NavTab
+        <NavTab isActiveTab={activeLink === "candidateHR" ? true : false}
+              onClick={toCandidateHR}
             >
-              <a>Students and Graduates</a>
+              <a>Candidates and Hr's</a>
             </NavTab>
 
         <NavTab

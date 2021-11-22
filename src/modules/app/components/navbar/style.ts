@@ -95,7 +95,7 @@ export const NavTab = styled.div<any>`
   cursor: pointer;
   position: relative;
   margin:14px 0px;
-  padding: 10px;
+  padding: 10px 20px;
   letter-spacing: 0.05em;
   a {
    
