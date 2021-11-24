@@ -19,6 +19,7 @@ import HrSignIn from "../../../signIn/components/hrSignIn";
 import Auth from "./auth";
 import HrDashboard from "../../../hrDashboard";
 import CandidateHR from "../../../candidateHR";
+import MilitaryVeterans from "../../../professionals/MilitaryVetarans";
 
 // import ReactGA from 'react-ga'
 
@@ -107,6 +108,14 @@ export const routes: RouteDefinition[] = [
     redirect: Paths.candidateHR,
     title: "Candidate&HR's",
     pathType: 8,
+  },
+  {
+    path: Paths.militaryVeteran,
+    component: MilitaryVeterans,
+    protected: false,
+    redirect: Paths.militaryVeteran,
+    title: "Military&Veteran",
+    pathType: 9,
   },
 ].concat(notFoundRoute as any); // Ensure that notFound is the last route
 
