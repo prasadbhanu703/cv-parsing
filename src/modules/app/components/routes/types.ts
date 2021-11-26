@@ -7,5 +7,6 @@ export enum Paths {
   hrSignIn = "/hrSignIn",
   canSignIn = "/canSignIn",
   candidateHR = "/candidateHR",
-  militaryVeteran = '/militaryVeteran'
+  militaryVeteran = '/militaryVeteran',
+  benefits="/benefits"
 }

@@ -20,7 +20,7 @@ import Auth from "./auth";
 import HrDashboard from "../../../hrDashboard";
 import CandidateHR from "../../../candidateHR";
 import MilitaryVeterans from "../../../professionals/MilitaryVetarans";
-
+import Benefits from "../../../lifeRecHelper/benefits"
 // import ReactGA from 'react-ga'
 
 // history.listen(location => {
@@ -116,6 +116,13 @@ export const routes: RouteDefinition[] = [
     redirect: Paths.militaryVeteran,
     title: "Military&Veteran",
     pathType: 9,
+  },
+  { path: Paths.benefits,
+    component: Benefits,
+    protected: false,
+    redirect: Paths.benefits,
+    title: "Benefits",
+    pathType: 8,
   },
 ].concat(notFoundRoute as any); // Ensure that notFound is the last route
 
