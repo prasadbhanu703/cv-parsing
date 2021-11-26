@@ -226,10 +226,10 @@ const Navbar = () => {
                       Professionals
                       </a>
                       <Menu className={classes.menu} {...bindMenu(popupState)}>
-                        <MenuItem className={classes.menuList} onClick={popupState.close}><Link to="/benefits">Home</Link></MenuItem>
+                        <MenuItem className={classes.menuList} onClick={popupState.close}><Link to="/">Home</Link></MenuItem>
                         <MenuItem className={classes.menuList} onClick={popupState.close}>Locations</MenuItem>
                         <MenuItem className={classes.menuList} onClick={popupState.close}>Professions</MenuItem>
-                        <MenuItem className={classes.menuList} onClick={popupState.close}>US Military & Veterans</MenuItem>
+                        <MenuItem className={classes.menuList} onClick={popupState.close}><Link to="/militaryVeteran">US Military & Veterans</Link></MenuItem>
                       </Menu>
                     </React.Fragment>
                   )}
